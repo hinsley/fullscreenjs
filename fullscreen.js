@@ -12,18 +12,20 @@ function activateFullscreen(element) {
     if (element.requestFullscreen) {
         element.requestFullscreen();
         return true;
-    } else if (element.mozRequestFullScreen) {
+    }
+    if (element.mozRequestFullScreen) {
         element.mozRequestFullScreen();
         return true;
-    } else if (element.msRequestFullscreen) {
+    }
+    if (element.msRequestFullscreen) {
         element.msRequestFullscreen();
         return true;
-    } else if (element.webkitRequestFullscreen) {
+    }
+    if (element.webkitRequestFullscreen) {
         element.webkitRequestFullscreen();
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 /**
@@ -33,25 +35,20 @@ function deactivateFullscreen() {
     if (document.exitFullscreen) {
         document.exitFullscreen();
         return true;
-    } else if (document.mozCancelFullScreen) {
+    }
+    if (document.mozCancelFullScreen) {
         document.mozCancelFullScreen();
         return true;
-    } else if (document.msExitFullscreen) {
+    }
+    if (document.msExitFullscreen) {
         document.msExitFullscreen();
         return true;
-    } else if (document.webkitExitFullscreen) {
+    }
+    if (document.webkitExitFullscreen) {
         document.webkitExitFullscreen();
         return true;
-    } else {
-        return false;
     }
-}
-
-/**
- * Return `true` if fullscreen mode is active, `false` otherwise.
- **/
-function fullscreenActive() {
-    return Boolean(fullscreenElement);
+    return false;
 }
 
 /**
@@ -77,6 +74,13 @@ function fullscreenElement() {
            document.mozFullScreenElement ||
            document.msFullscreenElement  ||
            document.webkitFullscreenElement;
+}
+
+/**
+ * Return `true` if fullscreen mode is active, `false` otherwise.
+ **/
+function fullscreenActive() {
+    return Boolean(fullscreenElement);
 }
 
 /**
