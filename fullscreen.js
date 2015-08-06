@@ -80,7 +80,7 @@ function fullscreenElement() {
  * Return `true` if fullscreen mode is active, `false` otherwise.
  **/
 function fullscreenActive() {
-    return Boolean(fullscreenElement);
+    return Boolean(fullscreenElement());
 }
 
 /**
