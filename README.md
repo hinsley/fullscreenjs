@@ -12,3 +12,7 @@ you have to do to include it in your project is:
 
 from some HTML file, in the `<head>` tag, before you use any of the library's
 functions.
+
+You can also use `require()` as supplied by Node.js-style module systems, like so:
+
+`var fs = require('./fullscreen.js');`
