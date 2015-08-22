@@ -1,0 +1,23 @@
+{
+  "name": "fullscreenjs",
+  "version": "0.0.1",
+  "description": "Fullscreen mode for web browsers",
+  "main": "fullscreen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xnil/fullscreenjs.git"
+  },
+  "keywords": [
+    "browser",
+    "fullscreen"
+  ],
+  "author": "Carter Hinsley <carterhinsley@gmail.com> (https://github.com/xnil/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xnil/fullscreenjs/issues"
+  },
+  "homepage": "https://github.com/xnil/fullscreenjs#readme"
+}
