@@ -1,6 +1,6 @@
 {
   "name": "fullscreenjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fullscreen mode for web browsers",
   "main": "fullscreen.js",
   "scripts": {
